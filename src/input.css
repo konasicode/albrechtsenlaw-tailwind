@@ -28,4 +28,32 @@
 
 html {
 	font-family: 'Instrument Sans', sans-serif;
+	color: #28303B;
+}
+
+body {
+	background-color: rgb(248 250 252);
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.booking_icon {
+	background: url(../images/booking.png) no-repeat;
+	background-size: contain;
+}
+
+nav a {
+	background: url(../images/arrow-upright.png) no-repeat top right;
+	background-size: contain;
+	padding-right: 136px;
+}
+
+.close_icon {
+	background: url(../images/close_icon.png) no-repeat;
+	background-size: contain;
 }
