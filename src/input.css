@@ -43,7 +43,8 @@ body {
 }
 
 .booking_icon {
-	background: url(../images/booking.png) no-repeat;
+	background-image: url(../images/booking.png);
+	background-repeat: no-repeat;
 	background-size: contain;
 }
 
@@ -57,3 +58,16 @@ nav a {
 	background: url(../images/close_icon.png) no-repeat;
 	background-size: contain;
 }
+
+.booking_light_icon {
+	background-image: url(../images/booking_light.png);
+	background-repeat: no-repeat;
+	background-position: left 34px center;
+}
+
+.hero_arrow_upright {
+	background-image: url(../images/arrow-upright.png);
+	background-repeat: no-repeat;
+	background-position: right 20px center;
+}
+
