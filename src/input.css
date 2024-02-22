@@ -31,6 +31,14 @@ html {
 	color: #28303B;
 }
 
+footer {
+	background-color: #222932;
+}
+
+footer a:hover {
+	text-decoration: underline solid rgb(244, 204, 9);
+}
+
 .container {
 	width: 100%;
 	max-width: 1200px;
@@ -67,3 +75,8 @@ nav a {
 	background-position: right 20px center;
 }
 
+.arrow_dawn {
+	background-image: url(../images/arrow_dawn.png);
+	background-repeat: no-repeat;
+	/* background-position: left 0px center; */
+}
