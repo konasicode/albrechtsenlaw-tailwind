@@ -8,8 +8,8 @@
     <link rel="icon" type="image/png" href="./images/favicon.png" />
     <script src="js/main.js" defer></script>
   </head>
-  <body>
-    <header class="sticky top-0 bg-transparent">
+  <body class="bg-slate-50">
+    <header class="sticky top-0 bg-transparent backdrop-blur-sm">
       <div class="container">
         <div class="flex justify-between items-center py-7">
           <a class="max-w-56" href="/">
@@ -31,6 +31,7 @@
         </div>
       </div>
     </header>
+    <!-- Hero Section -->
     <section class="bg-[url('../images/hero_bg.png')] bg-cover bg-no-repeat pb-9 mt-[-88px]">
       <div class="container">
         <div class="flex flex-col gap-y-20">
@@ -70,6 +71,30 @@
         </div>
       </div>
     </section>
+    <!-- About ME Section-->
+    <section class="pt-20 pb-24">
+      <div class="container">
+        <div class="flex gap-x-24">
+          <img class="w-[500px]" src="../build/images/rasmus_foto.png" alt="rasmus_foto">
+          <div class="flex flex-col gap-y-8">
+            <div class="flex flex-col gap-y-3">
+              <h1 class="text-5xl leading-[72px]">Rasmus Albrechtsen</h1>
+              <div class="flex flex-col text-xl leading-10 font-medium">
+                <a class="hover:underline text-blue-900 decoration-solid" href="mailto:ral@albrechtsenlaw.dk" title="email: ral@albrechtsenlaw.dk" target="_blank">ral@albrechtsenlaw.dk</a>
+                <a href="tel:+4561483456" target="_blank">+45 61 48 34 56</a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-y-5 text-lg">
+              <p>Rasmus Albrechtsen er direktør i Albrechtsen Law og er beskikket som advokat af Justitsministeriet og medlem af Advokatsamfundet.</p>
+              <p>Rasmus rådgiver primært startups og små- og mellemstore virksomheder om juridiske erhvervsforhold.</p>
+              <p>Bl.a. har Rasmus hjulpet flere startups med kapitalrejsninger, warrantprogrammer og udarbejdelse af kontrakter.</p>
+              <p>Desuden har han undervist på Københavns Universitet i bl.a. konkurs- og panteret.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modal menu -->
     <div id="modal" class="hidden fixed top-0 left-0 h-screen w-full z-10">
       <div id="overlay" class="bg-zinc-300/40 h-full backdrop-blur-sm"></div>
       <nav
