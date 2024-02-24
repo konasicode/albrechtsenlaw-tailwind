@@ -31,25 +31,11 @@ html {
 	color: #28303B;
 }
 
-footer {
-	background-color: #222932;
-}
-
-footer a:hover {
-	text-decoration: underline solid rgb(244, 204, 9);
-}
-
 .container {
 	width: 100%;
 	max-width: 1200px;
 	padding: 0 20px;
 	margin: 0 auto;
-}
-
-.booking_icon {
-	background-image: url(../images/booking.png);
-	background-repeat: no-repeat;
-	background-size: contain;
 }
 
 nav a {
@@ -58,15 +44,30 @@ nav a {
 	padding-right: 136px;
 }
 
+.primary_btn {
+	background: linear-gradient(to right, #1e3584 50%, #122C83 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: all .25s ease-in;
+}
+
+.primary_btn:hover {
+	background-position: left bottom;
+}
+
+.booking_icon {
+	background-image: url(../images/booking.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
 .close_icon {
 	background: url(../images/close_icon.png) no-repeat;
 	background-size: contain;
 }
 
 .booking_light_icon {
-	background-image: url(../images/booking_light.png);
-	background-repeat: no-repeat;
-	background-position: left 34px center;
+	background: url(../images/booking_light.svg) center no-repeat;
 }
 
 .hero_arrow_upright {
@@ -79,4 +80,12 @@ nav a {
 	background-image: url(../images/arrow_dawn.png);
 	background-repeat: no-repeat;
 	/* background-position: left 0px center; */
+}
+
+footer {
+	background-color: #222932;
+}
+
+footer a:hover {
+	text-decoration: underline solid rgb(244, 204, 9);
 }
