@@ -3,17 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Albretchtsenlaw</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" href="./images/favicon.png" />
-    <script src="js/main.js" defer></script>
+    <?php
+      wp_head();
+    ?>
   </head>
-  <body class="bg-slate-50">
+  <body>
     <header class="sticky z-10 top-0 bg-transparent backdrop-blur-sm">
       <div class="container">
         <div class="flex justify-between items-center py-7">
-          <a class="max-w-56" href="/">
-            <img class="w-full" src="./images/logo.png" alt="logo" />
+          <a class="max-w-56" href="<?php echo get_home_url(); ?>">
+            <?php
+              $custom_logo_id = get_theme_mod( 'custom_logo' );
+              $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+              if ( has_custom_logo() ) {
+                echo '<img class="w-full" src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
+              }
+            ?>
           </a>
           <div class="flex gap-x-10 relative">
             <a class="booking_icon pl-7 uppercase" href="#book_meeting"
@@ -46,7 +51,7 @@
             </a>
           </div>
           <div class="flex flex-wrap gap-x-10 gap-y-8">
-            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="/company-structure">
+            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="<?php echo get_home_url(); ?>/company-structure">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
                 <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
                     <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
@@ -59,7 +64,7 @@
               <p class="text-xl">Selskabsstruktur</p>
               <p class="text-sm leading-6 pr-28">Bl.a. har Rasmus assisteret med frivillig nedlukning af mere end 250 selskaber</p>
             </a>
-            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="/capital-increases">
+            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="<?php echo get_home_url(); ?>/capital-increases">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
                 <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
                     <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
@@ -72,7 +77,7 @@
               <p class="text-xl">Kapitalforhøjelser</p>
               <p class="text-sm pr-28">Bl.a. har Rasmus assisteret med frivillig nedlukning af mere end 250 selskaber</p>
             </a>
-            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full gap-y-2.5" href="/contracts">
+            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full gap-y-2.5" href="<?php echo get_home_url(); ?>/contracts">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
                 <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
                     <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
@@ -85,7 +90,7 @@
               <p class="text-xl">Kontrakter</p>
               <p class="text-sm pr-28">Bl.a. har Rasmus assisteret med frivillig nedlukning af mere end 250 selskaber</p>
             </a>
-            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="/warrant-programs">
+            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="<?php echo get_home_url(); ?>/warrant-programs">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
                 <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
                     <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
@@ -98,7 +103,7 @@
               <p class="text-xl">Warrantprogrammer</p>
               <p class="text-sm pr-28">Bl.a. har Rasmus assisteret med frivillig nedlukning af mere end 250 selskaber</p>
             </a>
-            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="/shutdown">
+            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="<?php echo get_home_url(); ?>/shutdown">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
                 <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
                     <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
@@ -111,7 +116,7 @@
               <p class="text-xl">Nedlukning</p>
               <p class="text-sm pr-28">Bl.a. har Rasmus assisteret med frivillig nedlukning af mere end 250 selskaber</p>
             </a>
-            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full gap-y-2.5" href="/other-services">
+            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full gap-y-2.5" href="<?php echo get_home_url(); ?>/other-services">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
                 <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
                     <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
@@ -132,7 +137,7 @@
     <section id="about_me" class="pt-20 pb-24">
       <div class="container">
         <div class="flex gap-x-24">
-          <img class="w-[500px]" src="../build/images/rasmus_foto.png" alt="rasmus_photo">
+          <img class="w-[500px]" src="<?php echo get_template_directory_uri(); ?>/build/images/rasmus_foto.png" alt="rasmus_photo">
           <div class="flex flex-col gap-y-8">
             <div class="flex flex-col gap-y-3">
               <h1 class="text-5xl leading-[72px]">Rasmus Albrechtsen</h1>
@@ -161,6 +166,9 @@
             <a class="hover:underline text-blue-900 decoration-solid" href="mailto:ral@albrechtsenlaw.dk" title="email: ral@albrechtsenlaw.dk" target="_blank">ral@albrechtsenlaw.dk</a>
             <a class="hover:text-blue-900" href="tel:+4561483456" target="_blank">+45 61 48 34 56</a>
           </div>
+        </div>
+        <div class="calendly-container">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/rasmusa/meet-with-rasmus?hide_event_type_details=1"></div>
         </div>
       </div>
     </section>
@@ -191,16 +199,16 @@
       <div class="container">
         <div class="flex text-slate-50 justify-between">
           <div class="flex flex-col justify-between">
-            <a class="max-w-56" href="/">
-              <img class="w-full" src="./images/logo_light.png" alt="logo" />
+            <a class="max-w-56" href="<?php echo get_home_url(); ?>">
+              <img class="w-full" src="<?php echo get_template_directory_uri(); ?>/build/images/logo_light.png" alt="logo" />
             </a>
             <span>CVR-nr. 44581078</span>
           </div>
           <div class="flex flex-col gap-y-10">
             <div class="flex gap-x-16 font-medium text-lg">
-              <a href="/">Forretningsbetingelser</a>
-              <a href="/">Persondatapolitik</a>
-              <a href="/">Kontakt </a>
+              <a href="<?php echo get_home_url(); ?>/terms-and-conditions">Forretningsbetingelser</a>
+              <a href="<?php echo get_home_url(); ?>/personal-data-policy">Persondatapolitik</a>
+              <a href="#book_meeting">Kontakt </a>
             </div>
             <div class="flex flex-col gap-y-5">
               <span class="uppercase text-2xl leading-9">København</span>
@@ -237,9 +245,9 @@
         </button>
         <div id="menu-list" class="flex flex-col gap-y-10 items-start text-2xl">
           <div class="flex flex-col gap-y-5 items-start w-full max-w-[260px]">
-            <a class="menu-item" href="/specialties">Specialer</a>
+            <a class="menu-item" href="<?php echo get_home_url(); ?>/specialties">Specialer</a>
             <nav class="flex flex-col gap-y-[18px] text-base w-full">
-              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="/company-structure">
+              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="<?php echo get_home_url(); ?>/company-structure">
                 Selskabsstruktur
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                   <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
@@ -251,7 +259,7 @@
                   </g>
                 </svg>
               </a>
-              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="/capital-increases">
+              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="<?php echo get_home_url(); ?>/capital-increases">
                 Kapitalforhøjelser
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                   <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
@@ -263,7 +271,7 @@
                   </g>
                 </svg>
               </a>
-              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="/contracts">
+              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="<?php echo get_home_url(); ?>/contracts">
                 Kontrakter
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                   <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
@@ -275,7 +283,7 @@
                   </g>
                 </svg>
               </a>
-              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="/warrant-programs">
+              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="<?php echo get_home_url(); ?>/warrant-programs">
                 Warrantprogrammer
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                   <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
@@ -287,7 +295,7 @@
                   </g>
                 </svg>
               </a>
-              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="/shutdown">
+              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="<?php echo get_home_url(); ?>/shutdown">
                 Nedlukning
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                   <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
@@ -299,7 +307,7 @@
                   </g>
                 </svg>
               </a>
-              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="/other-services">
+              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="<?php echo get_home_url(); ?>/other-services">
                 Andre Ydelser
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                   <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
@@ -318,5 +326,8 @@
         </div>
       </nav>
     </div>
+    <?php
+      wp_footer();
+    ?>
   </body>
 </html>
