@@ -14,6 +14,7 @@
 	add_action( 'wp_enqueue_scripts', 'albrechtsenlaw_register_styles');
 
 	function albrechtsenlaw_register_scripts(){
+		wp_enqueue_script( 'calendly-script', 'https://assets.calendly.com/assets/external/widget.js', array(), $version, true );
 		wp_enqueue_script('albrechtsenlaw-main', get_template_directory_uri()."/build/js/main.js", array(), $version, true);
 	}
 

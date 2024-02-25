@@ -38,14 +38,8 @@ html {
 	margin: 0 auto;
 }
 
-nav a {
-	background: url(../images/arrow-upright.png) no-repeat top right;
-	background-size: contain;
-	padding-right: 136px;
-}
-
 .primary_btn {
-	background: linear-gradient(to right, #1e3584 50%, #122C83 50%);
+	background: linear-gradient(to right, #1c399b 50%, #122C83 50%);
 	background-size: 200% 100%;
 	background-position: right bottom;
 	transition: all .25s ease-in;
@@ -55,6 +49,30 @@ nav a {
 	background-position: left bottom;
 }
 
+.menu-item {
+	position: relative;
+	transition: all .25s ease-in;
+}
+
+.menu-item:hover {
+	color: #153396;
+}
+
+.active-arrow {
+	transform: translate(-100%, 100%);
+	transition: transform .25s ease-in;
+}
+
+.menu-item:hover .active-arrow {
+	transform: translate(0, 0);
+}
+
+.right-arrowup {
+	position: absolute;
+	top: 3px;
+	right: 21px;
+}
+
 .booking_icon {
 	background-image: url(../images/booking.svg);
 	background-repeat: no-repeat;
@@ -62,15 +80,14 @@ nav a {
 }
 
 .close_icon {
-	background: url(../images/close_icon.png) no-repeat;
-	background-size: contain;
+	background: url(../images/close.svg) no-repeat left center;
 }
 
 .booking_light_icon {
 	background: url(../images/booking_light.svg) center no-repeat;
 }
 
-.hero_arrow_upright {
+.arrow_upright {
 	background-image: url(../images/arrow-upright.png);
 	background-repeat: no-repeat;
 	background-position: right 20px center;
@@ -79,7 +96,11 @@ nav a {
 .arrow_dawn {
 	background-image: url(../images/arrow_dawn.png);
 	background-repeat: no-repeat;
-	/* background-position: left 0px center; */
+}
+
+.calendly-inline-widget {
+	min-width: 670px;
+	height: 700px;
 }
 
 footer {
