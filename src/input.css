@@ -28,4 +28,85 @@
 
 html {
 	font-family: 'Instrument Sans', sans-serif;
+	color: #28303B;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.primary_btn {
+	background: linear-gradient(to right, #1c399b 50%, #122C83 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: all .25s ease-in;
+}
+
+.primary_btn:hover {
+	background-position: left bottom;
+}
+
+.menu-item {
+	position: relative;
+	transition: all .25s ease-in;
+}
+
+.menu-item:hover {
+	color: #153396;
+}
+
+.active-arrow {
+	transform: translate(-100%, 100%);
+	transition: transform .25s ease-in;
+}
+
+.menu-item:hover .active-arrow {
+	transform: translate(0, 0);
+}
+
+.right-arrowup {
+	position: absolute;
+	top: 3px;
+	right: 21px;
+}
+
+.booking_icon {
+	background-image: url(../images/booking.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.close_icon {
+	background: url(../images/close.svg) no-repeat left center;
+}
+
+.booking_light_icon {
+	background: url(../images/booking_light.svg) center no-repeat;
+}
+
+.arrow_upright {
+	background-image: url(../images/arrow-upright.png);
+	background-repeat: no-repeat;
+	background-position: right 20px center;
+}
+
+.arrow_dawn {
+	background-image: url(../images/arrow_dawn.png);
+	background-repeat: no-repeat;
+}
+
+.calendly-inline-widget {
+	min-width: 670px;
+	height: 700px;
+}
+
+footer {
+	background-color: #222932;
+}
+
+footer a:hover {
+	text-decoration: underline solid rgb(244, 204, 9);
 }
