@@ -126,7 +126,7 @@
                     <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
                 </g>
               </svg>  
-              <p class="text-xl">Andrey delser</p>
+              <p class="text-xl">Andre ydelser</p>
               <p class="text-sm pr-28">Stiftelse af selskaber, omdannelse til ApS, selskabsændringer, ansættelseskontrakter, gældsrådgivning, konkursrådgivning.</p>
             </a>
           </div>
