@@ -88,7 +88,7 @@
                 </g>
               </svg>  
               <p class="text-xl">Kontrakter</p>
-              <p class="text-sm pr-28">Ejeraftaler, handelsbetingelser, samarbejdsaftaler,  låneaftaler, overdragelsesaftaler, erhvervslejekontrakter mv.</p>
+              <p class="text-sm pr-28">Ejeraftaler, handelsbetingelser, samarbejdsaftaler, låneaftaler, overdragelsesaftaler, erhvervslejekontrakter mv.</p>
             </a>
             <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="<?php echo get_home_url(); ?>/warrant-programs">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
