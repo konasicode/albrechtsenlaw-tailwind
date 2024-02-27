@@ -62,7 +62,7 @@
                 </g>
               </svg>
               <p class="text-xl">Selskabsstruktur</p>
-              <p class="text-sm leading-6 pr-28">Bl.a. har Rasmus assisteret med frivillig nedlukning af mere end 250 selskaber</p>
+              <p class="text-sm leading-6 pr-28">Valg af selskabsform i forhold til bl.a. optimering af cash flow og skat samt fordeling af aktiviteter og risiko.</p>
             </a>
             <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="<?php echo get_home_url(); ?>/capital-increases">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
@@ -75,7 +75,7 @@
                 </g>
               </svg>
               <p class="text-xl">Kapitalforhøjelser</p>
-              <p class="text-sm pr-28">Bl.a. har Rasmus assisteret med frivillig nedlukning af mere end 250 selskaber</p>
+              <p class="text-sm pr-28">Investeringsrunder og kapitalforhøjelser med kontant indskud, gældskonvertering eller apportindskud.</p>
             </a>
             <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full gap-y-2.5" href="<?php echo get_home_url(); ?>/contracts">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
@@ -88,7 +88,7 @@
                 </g>
               </svg>  
               <p class="text-xl">Kontrakter</p>
-              <p class="text-sm pr-28">Bl.a. har Rasmus assisteret med frivillig nedlukning af mere end 250 selskaber</p>
+              <p class="text-sm pr-28">Ejeraftaler, handelsbetingelser, samarbejdsaftaler,  låneaftaler, overdragelsesaftaler, erhvervslejekontrakter mv.</p>
             </a>
             <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="<?php echo get_home_url(); ?>/warrant-programs">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
@@ -101,7 +101,7 @@
                 </g>
               </svg>
               <p class="text-xl">Warrantprogrammer</p>
-              <p class="text-sm pr-28">Bl.a. har Rasmus assisteret med frivillig nedlukning af mere end 250 selskaber</p>
+              <p class="text-sm pr-28">Warrants, medarbejderaktier og andre bonusprogrammer. Rådgivning om etablering, administration, eksekvering og skat.</p>
             </a>
             <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="<?php echo get_home_url(); ?>/shutdown">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
@@ -114,7 +114,7 @@
                 </g>
               </svg>
               <p class="text-xl">Nedlukning</p>
-              <p class="text-sm pr-28">Bl.a. har Rasmus assisteret med frivillig nedlukning af mere end 250 selskaber</p>
+              <p class="text-sm pr-28">Kontrollerede nedlukning af selskaber ved frivillig likvidation eller betalingserklæring.</p>
             </a>
             <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full gap-y-2.5" href="<?php echo get_home_url(); ?>/other-services">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
@@ -127,7 +127,7 @@
                 </g>
               </svg>  
               <p class="text-xl">Andrey delser</p>
-              <p class="text-sm pr-28">Bl.a. har Rasmus assisteret med frivillig nedlukning af mere end 250 selskaber</p>
+              <p class="text-sm pr-28">Stiftelse af selskaber, omdannelse til ApS, selskabsændringer, ansættelseskontrakter, gældsrådgivning, konkursrådgivning.</p>
             </a>
           </div>
         </div>
