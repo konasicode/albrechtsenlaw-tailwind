@@ -8,7 +8,7 @@
 
 	$version = wp_get_theme()->get('Version');
 	function albrechtsenlaw_register_styles(){
-		wp_enqueue_style('albrechtsenlaw-style', get_template_directory_uri()."/build/css/style.css", array(), $version, 'all');
+		wp_enqueue_style('albrechtsenlaw-style', get_template_directory_uri()."/build/css/style1_0_3.css", array(), $version, 'all');
 	}
 
 	add_action( 'wp_enqueue_scripts', 'albrechtsenlaw_register_styles');

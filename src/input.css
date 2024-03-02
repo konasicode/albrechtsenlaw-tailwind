@@ -99,9 +99,15 @@ html {
 }
 
 .calendly-inline-widget {
-	min-width: 670px;
-	height: 700px;
+	height: 600px;
 }
+
+@media (min-width: 1024px) {
+	.calendly-inline-widget {
+		min-width: 670px;
+		height: 700px;
+	}
+} 
 
 footer {
 	background-color: #222932;
