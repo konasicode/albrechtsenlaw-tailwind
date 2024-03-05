@@ -167,7 +167,7 @@
           </div>
         </div>
         <div class="calendly-container pt-10 lg:pt-0">
-          <div class="calendly-inline-widget" data-url="https://calendly.com/rasmusa/meet-with-rasmus?hide_event_type_details=1"></div>
+          <div class="calendly-inline-widget" data-url="https://calendly.com/rasmusa/meet-with-rasmus?hide_event_type_details=1&hide_gdpr_banner=1"></div>
         </div>
       </div>
     </section>
