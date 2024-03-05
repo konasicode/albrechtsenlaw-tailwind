@@ -36,7 +36,7 @@
             <div class="flex flex-col gap-y-5 lg:gap-x-16 font-medium text-lg lg:flex-row">
               <a href="<?php echo get_home_url(); ?>/terms-and-conditions">Forretningsbetingelser</a>
               <a href="<?php echo get_home_url(); ?>/personal-data-policy">Persondatapolitik</a>
-              <a href="#book_meeting">Kontakt </a>
+              <a href="<?php echo get_home_url(); ?>/#book_meeting">Kontakt </a>
             </div>
             <div class="flex flex-col gap-y-5">
               <span class="uppercase text-3xl leading-[45px] lg:text-2xl lg:leading-9">København</span>
@@ -150,8 +150,8 @@
               </a>
             </nav>
           </div>
-          <a class="menu-item" href="#about_me">Om</a>
-          <a class="menu-item" href="#book_meeting">Kontakt</a>
+          <a class="menu-item" href="<?php echo get_home_url(); ?>/#about_me">Om</a>
+          <a class="menu-item" href="<?php echo get_home_url(); ?>/#book_meeting">Kontakt</a>
           <a href="#book_meeting" class="mt-5 lg:hidden primary_btn w-fit flex gap-x-1 items-center text-[16px] leading-6 py-3.5 px-9 uppercase text-white">
             <span class="booking_light_icon block h-6 w-6"></span>
             Book et møde

@@ -21,7 +21,7 @@
             ?>
           </a>
           <div class="flex gap-x-10 relative">
-            <a class="hidden booking_icon pl-7 uppercase lg:block" href="#book_meeting"
+            <a class="hidden booking_icon pl-7 uppercase lg:block" href="<?php echo get_home_url(); ?>/#book_meeting"
               >Book et møde</a
             >
             <button id="burger-btn" class="cursor-pointer flex gap-x-1">
