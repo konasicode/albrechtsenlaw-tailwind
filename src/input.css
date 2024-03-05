@@ -156,6 +156,12 @@ footer a:hover {
 	width: 100%;
 }
 
+.law {
+	font-size: 20px;
+	line-height: 33px;
+	font-weight: 500;
+}
+
 @media (min-width: 1024px) {
 	.articles_info {
 		row-gap: 30px;
