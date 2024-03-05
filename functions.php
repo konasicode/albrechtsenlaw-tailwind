@@ -20,6 +20,27 @@
 
 	add_action( 'wp_enqueue_scripts', 'albrechtsenlaw_register_scripts');
 
+	// Add Google Tag Manager code in <head>
+	add_action( 'wp_head', 'google_tag_manager_head' );
+	function google_tag_manager_head() { ?>
+	
+		<!-- Google Tag Manager -->
+		<!-- Paste here your google tag snippet -->
+		<!-- End Google Tag Manager -->
+
+	<?php }
+
+
+	// Add Google Tag Manager code immediately below opening <body> tag
+	add_action( 'genesis_before', 'google_tag_manager_body' );
+	function google_tag_manager_body() { ?>
+	
+		<!-- Google Tag Manager (noscript) -->
+		<!-- Paste here noscript snippet -->
+		<!-- End Google Tag Manager (noscript) -->
+
+	<?php }
+
 	function albrechtsenlaw_custom_logo_setup() {
 		$defaults = array(
 			'height'               => 32,
