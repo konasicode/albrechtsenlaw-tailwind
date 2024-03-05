@@ -152,7 +152,7 @@
           </div>
           <a class="menu-item" href="<?php echo get_home_url(); ?>/#about_me">Om</a>
           <a class="menu-item" href="<?php echo get_home_url(); ?>/#book_meeting">Kontakt</a>
-          <a href="#book_meeting" class="mt-5 lg:hidden primary_btn w-fit flex gap-x-1 items-center text-[16px] leading-6 py-3.5 px-9 uppercase text-white">
+          <a href="<?php echo get_home_url(); ?>/#book_meeting" class="mt-5 lg:hidden primary_btn w-fit flex gap-x-1 items-center text-[16px] leading-6 py-3.5 px-9 uppercase text-white">
             <span class="booking_light_icon block h-6 w-6"></span>
             Book et møde
           </a>
