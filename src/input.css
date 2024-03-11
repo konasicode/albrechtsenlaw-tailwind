@@ -107,7 +107,44 @@ html {
 		min-width: 670px;
 		height: 700px;
 	}
-} 
+}
+
+.alb-form {
+	max-width: 430px;
+	margin: 20px auto 0;
+}
+@media (min-width: 1024px) {
+	.alb-form {
+		margin: 40px auto 0;
+	}
+}
+.alb-form .wpforms-field-container {
+	display: flex;
+	flex-direction: column;
+	gap: 15px 0;
+}
+.alb-form .wpforms-field-container .alb-form-field {
+	padding: 0;
+}
+.alb-form .wpforms-field-container .alb-form-field input {
+	max-width: 100%;
+	padding: 13px 20px;
+	border: 1px solid #F2F2F2;
+	background: #FCFCFC;
+}
+.alb-form .wpforms-field-container .alb-form-field textarea {
+	max-width: 100%;
+	padding: 13px 20px;
+	border: 1px solid #F2F2F2;
+	background: #FCFCFC;
+	resize: none;
+}
+.alb-form-submit {
+	max-width: 230px;
+	margin: 20px auto 0;
+	padding-top: 0.875rem;
+	padding-bottom: 0.875rem;
+}
 
 footer {
 	background-color: #222932;

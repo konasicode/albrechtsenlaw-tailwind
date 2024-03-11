@@ -136,6 +136,10 @@
         <div class="calendly-container pt-10 lg:pt-0">
           <div class="calendly-inline-widget" data-url="https://calendly.com/rasmusa/meet-with-rasmus?hide_event_type_details=1&hide_gdpr_banner=1"></div>
         </div>
+        <div class="pt-10">
+          <h3 class="text-[52px] text-black text-center">Kontakt os</h3>
+          <?php echo do_shortcode( '[wpforms id="50" title="false"]' ); ?>
+        </div>
       </div>
     </section>
 <?php
