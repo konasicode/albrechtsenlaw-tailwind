@@ -8,6 +8,7 @@
     ?>
   </head>
   <body>
+    <?php wp_body_open(); ?>
     <header class="sticky z-10 top-0 bg-transparent backdrop-blur-sm">
       <div class="container">
         <div class="flex justify-between items-center py-5 lg:py-7">
