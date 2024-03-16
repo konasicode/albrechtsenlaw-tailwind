@@ -31,6 +31,10 @@ html {
 	color: #28303B;
 }
 
+.legal_items li {
+	padding-left: 12px;
+}
+
 .container {
 	width: 100%;
 	max-width: 1200px;
@@ -190,8 +194,7 @@ footer a:hover {
 }
 
 .info p span {
-	max-width: 32px;
-	width: 100%;
+	width: 32px;
 }
 
 .law {
