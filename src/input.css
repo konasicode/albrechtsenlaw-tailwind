@@ -106,6 +106,19 @@ html {
 	height: 600px;
 }
 
+.check ul li {
+	background: url(../images/check.svg) no-repeat;
+	font-weight: 400;
+	line-height: 24px;
+	padding-left: 32px;
+	font-size: 16px;
+}
+.check span {
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 52px;
+}
+
 @media (min-width: 1024px) {
 	.calendly-inline-widget {
 		min-width: 670px;
