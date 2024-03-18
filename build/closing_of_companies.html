@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Albretchtsenlaw</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body class="bg-slate-50">
+    <header class="sticky z-10 top-0 bg-transparent backdrop-blur-sm">
+      <div class="container">
+        <div class="flex justify-between items-center py-5 lg:py-7">
+          <a class="max-w-56" href="/">
+            <img class="w-full" src="./images/logo.png" alt="logo" />
+          </a>
+          <div class="flex gap-x-10 relative">
+            <a class="hidden booking_icon pl-7 uppercase lg:block" href="#book_meeting"
+              >Book et møde</a
+            >
+            <button id="burger-btn" class="cursor-pointer flex gap-x-1">
+              <svg  class="w-8 h-8 lg:w-6 lg:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+                <path d="M4.6665 23.5128V21.5128H27.3331V23.5128H4.6665ZM4.6665 16.9999V15H27.3331V16.9999H4.6665ZM4.6665 10.4871V8.48718H27.3331V10.4871H4.6665Z" fill="#222932"/>
+              </svg>
+              <span class="hidden lg:inline">MENU</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="bg-[url('../images/bg_leading_mob.png')] lg:bg-[url('../images/bg_leading.png')] bg-left-bottom lg:bg-[bottom_left_510px] bg-no-repeat lg:pb-[86px] pb-[220px] mt-[-88px]">
+      <div class="container">
+        <div class="flex flex-col gap-y-14 lg:gap-y-20">
+          <div class="flex flex-col gap-y-7 lg:gap-y-10 max-w-[560px]">
+            <h1 class="font-bold text-[32px] lg:text-5xl tracking-[-0.055rem] leading-10 lg:leading-[65px] lg:tracking-[-0.094rem] pt-32 lg:pt-36">
+               Nedlukning af selskaber og virksomheder
+            </h1>
+            <p class="text-base lg:text-2xl lg:leading-8">Advokat, Rasmus Albrechtsen, har assisteret med nedlukning af mere end 250 selskaber og virksomheder.</p>
+            <a href="#book_meeting" class="primary_btn w-fit flex gap-x-1 items-center  mt-3 lg:mt-0 leading-4 py-3.5 px-9 uppercase text-white">
+              <span class="booking_light_icon block h-6 w-6"></span>
+              Book et møde
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Operating environment Section-->
+    <section id="environment" class="py-10 lg:py-14">
+      <div class="container">
+        <div class="flex flex-col gap-y-10 lg:flex-row lg:gap-x-36">
+            <div class="flex flex-col gap-y-5 lg:pt-7">
+               <h1 class="text-xl">Rasmus har i flere år rådgivet virksomhedsejere, ledelser og kreditorer om nedlukning af selskaber og virksomheder.</h1>
+               <div class="flex flex-col gap-y-[10px] lg:gap-y-8 text-base">
+                  <span class="lg:text-lg">Desuden har han undervist på Københavns Universitet i bl.a. konkurs og nedlukning af selskaber.</span>
+                  <div class="flex flex-col gap-y-5">
+                  <span>Albrechtsen Law assisterer med alle juridiske forhold vedrørende nedlukning af selskaber og virksomheder, herunder:</span>
+                  <ul class="legal_items flex flex-col gap-y-3 list-disc pl-4">
+                     <li>Frivillig likvidation af anpartsselskaber (ApS) og aktieselskaber (A/S)</li>
+                     <li>Lukning ved betalingserklæring</li>
+                     <li>Nedlukning af enkeltmandsvirksomheder (EMV / PMV)</li>
+                     <li>Nedlukning af Interessentskaber (I/S)</li>
+                     <li>Konkurs, tvangsopløsning og rekonstruktion</li>
+                  </ul>
+               </div>
+                  <span class="hidden">Albrechtsen Law kan i forbindelse med en nedlukning også hjælpe med inddrivelse af fordringer, gældsrådgivning, afklaring af tvister, salg af aktiver, skattespørgsmål, indberetninger mv.</span>
+               </div>
+            </div>
+            <img class="hidden w-full max-w-[460px] lg:block" src="../build/images/environment_photo.png" alt="environment_photo">
+            <img class="lg:hidden w-full max-w-[350px]" src="../build/images/environment_photo_mob.png" alt="environment_photo_mob">
+        </div>
+      </div>
+    </section>
+    <!-- Priser -->
+    <section class="bg-slate-200 py-14">
+      <div class="container">
+         <div class="flex flex-col gap-y-5">
+            <div class="flex flex-col gap-y-5 lg:gap-y-7 text-left items-center ">
+               <h1 class="text-4xl text-center lg:text-left leading-[48px]">Faste priser for nedlukninger</h1>
+               <p class="text-lg text-center lg:text-left">Albrechtsen Law tilbyder fastpriser for følgende nedlukningsopgaver:</p>
+               <div class="flex flex-col gap-y-5 mt-5 lg:flex-row bg-slate-200 lg:bg-slate-50 check">
+                  <div class="lg:border-slate-200 lg:border-r-2 pt-8 pb-11 text-base leading-5 pl-5 pr-9 gap-y-7 flex flex-col bg-slate-50">
+                     <p class="font-semibold">Frivillig likvidation af ApS eller A/S</p>
+                     <p class="font-medium">DKK<span>10.000</span>ex.moms</p>
+                     <ul class="gap-y-3 flex flex-col">
+                        <li>Generalforsamlingsreferat</li>
+                        <li>Registrering som likvidator</li>
+                        <li>Administration af e-Boks</li>
+                        <li>Registrering på cvr.dk</li>
+                        <li>Afmeldelse af pligter</li>
+                        <li>Koordinering med revisor/bogholder</li>
+                        <li>Hvidvasktjek</li>
+                        <li>Afsluttende selvangivelse</li>
+                     </ul>
+                  </div>
+                  <div class="lg:border-slate-200 lg:border-r-2 pt-8 pb-11 text-base leading-5 pl-8 pr-9 gap-y-7 flex flex-col bg-slate-50">
+                     <p class="font-semibold">Lukning ved betalingserklæring</p>
+                     <p class="font-medium">DKK<span>4.000</span>ex.moms</p>
+                     <ul class="gap-y-3 flex flex-col">
+                        <li>Udarbejdelse af betalingserklæring</li>
+                        <li>Koordinering med revisor/bogholder</li>
+                        <li>Afmeldelser af pligter</li>
+                        <li>Indberetning til Erhvervsstyrelsen</li>
+                        <li>Hvidvasktjek</li>
+                        <li>Rådgivning</li>
+                     </ul>
+                  </div>
+                  <div class="lg:border-slate-200 lg:border-r-2 pt-8 pb-11 text-base leading-5 pl-8 pr-9 gap-y-7 flex flex-col bg-slate-50">
+                     <p class="font-semibold">Nedlukning af EMV/PMV</p>
+                     <p class="font-medium">DKK<span>3.000</span>ex.moms</p>
+                     <ul class="gap-y-3 flex flex-col">
+                        <li>Afregistrering på cvr.dk</li>
+                        <li>Afmeldelse af pligter</li>
+                        <li>Koordinering med revisor/bogholder</li>
+                        <li>Hvidvasktjek</li>
+                        <li>Rådgivning</li>
+                     </ul>
+                  </div>
+                  <div class="lg:border-slate-200 lg:border-r-2 pt-8 pb-11 text-base leading-5 pl-8 pr-4 gap-y-7 flex flex-col bg-slate-50">
+                     <p class="font-semibold">Nedlukning af I/S</p>
+                     <p class="font-medium">DKK<span>10.000</span>ex.moms</p>
+                     <ul class="gap-y-3 flex flex-col">
+                        <li>Udarbejdelse af ophørsaftale </li>
+                        <li>Afregistrering på cvr.dk</li>
+                        <li>Afmeldelser af pligter</li>
+                        <li>Koordinering med revisor/bogholder</li>
+                        <li>Hvidvasktjek</li>
+                        <li>Rådgivning</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="flex flex-col gap-y-5 text-base text-center items-center bg-slate-300 py-10">
+               <h3 class="font-semibold">Øvrige opgaver</h3>
+               <div class="flex flex-col gap-y-2">
+                  <p>For øvrige opgaver aftales prisen individuelt afhængigt af bl.a. opgavens kompleksitet og omfang. </p>
+                  <p>Albrechtsen Law samarbejder med statsautoriserede revisorer, der bl.a. kan bistå med vurderingsberetninger og revisorerklæringer.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+    </section>
+    <!-- Form -->
+    <section class="pt-14 pb-24">
+      <div class="container">
+         <div>
+            <h3 class="text-2xl lg:text-4xl lg:leading-[44px] font-bold text-black w-full max-w-[300px] lg:max-w-[840px] m-auto text-center">Udfyld formularen og bliv kontaktet af advokat,
+               Rasmus Albrechtsen:</h3>
+            <div class="wpforms-container alb-form wpforms-render-modern" id="wpforms-38"><form id="wpforms-form-38" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="38" method="post" enctype="multipart/form-data" action="/wordpress/" data-token="4ba5f51e7fffa5a2189b65e4ad26c8a3" novalidate="novalidate"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-hidden" id="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</div><div class="wpforms-field-container"><div id="wpforms-38-field_1-container" class="wpforms-field wpforms-field-name alb-form-name" data-field-id="1"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-38-field_1" aria-hidden="false">Navn <span class="wpforms-required-label" aria-hidden="true">*</span></label><input type="text" id="wpforms-38-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" placeholder="Navn" aria-errormessage="wpforms-38-field_1-error" required=""></div><div id="wpforms-38-field_5-container" class="wpforms-field wpforms-field-text alb-form-phone" data-field-id="5"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-38-field_5" aria-hidden="false">Tlf.Nr <span class="wpforms-required-label" aria-hidden="true">*</span></label><input type="text" id="wpforms-38-field_5" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][5]" placeholder="Tlf.Nr" aria-errormessage="wpforms-38-field_5-error" required=""></div><div id="wpforms-38-field_3-container" class="wpforms-field wpforms-field-email alb-form-email" data-field-id="3"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-38-field_3" aria-hidden="false">Email <span class="wpforms-required-label" aria-hidden="true">*</span></label><input type="email" id="wpforms-38-field_3" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][3]" placeholder="Email" spellcheck="false" aria-errormessage="wpforms-38-field_3-error" required=""></div><div id="wpforms-38-field_4-container" class="wpforms-field wpforms-field-textarea alb-form-description" data-field-id="4"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-38-field_4" aria-hidden="false">Besked</label><textarea id="wpforms-38-field_4" class="wpforms-field-medium" name="wpforms[fields][4]" placeholder="Besked" aria-errormessage="wpforms-38-field_4-error"></textarea></div></div><!-- .wpforms-field-container --><div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="38">			<input type="hidden" name="wpforms[nonce]" value="0e7a8e4b81">
+              <input type="hidden" name="wpforms[author]" value="0"><input type="hidden" name="wpforms[post_id]" value="6"><button type="submit" name="wpforms[submit]" id="wpforms-submit-38" class="wpforms-submit alb-form-submit" data-alt-text="Sender..." data-submit-text="Book et møde" aria-live="assertive" value="wpforms-submit">Book et møde</button><img src="http://localhost/wordpress/wp-content/plugins/wpforms-lite/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading"></div></form>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- Our Services -->
+   <section class="bg-slate-50 lg:pt-14 pb-8 lg:pb-16">
+      <div class="container">
+        <div class="flex flex-col gap-y-7 lg:gap-y-10">
+         <h3 class="text-3xl lg:text-4xl lg:leading-[48px]">Vores Specialer</h3>
+          <div class="flex flex-wrap lg:gap-x-10 gap-y-4 lg:gap-y-8">
+            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="/company-structure">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
+                <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                    <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                </mask>
+                <g mask="url(#mask0_233_777)">
+                    <rect width="24" height="24" fill="#D9D9D9"></rect>
+                    <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                </g>
+              </svg>
+              <p class="text-xl">Selskabsstruktur</p>
+              <p class="text-sm leading-6 pr-5 lg:pr-28">Valg af selskabsform i forhold til bl.a. optimering af cash flow og skat samt fordeling af aktiviteter og risiko.</p>
+            </a>
+            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="/capital-increases">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
+                <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                    <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                </mask>
+                <g mask="url(#mask0_233_777)">
+                    <rect width="24" height="24" fill="#D9D9D9"></rect>
+                    <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                </g>
+              </svg>
+              <p class="text-xl">Kapitalforhøjelser</p>
+              <p class="text-sm pr-5 lg:pr-28">Investeringsrunder og kapitalforhøjelser med kontant indskud, gældskonvertering eller apportindskud.</p>
+            </a>
+            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full gap-y-2.5 border-solid border-r-[1px] lg:border-none" href="/contracts">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
+                <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                    <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                </mask>
+                <g mask="url(#mask0_233_777)">
+                    <rect width="24" height="24" fill="#D9D9D9"></rect>
+                    <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                </g>
+              </svg>  
+              <p class="text-xl">Kontrakter</p>
+              <p class="text-sm pr-5 lg:pr-28">Ejeraftaler, handelsbetingelser, samarbejdsaftaler, låneaftaler, overdragelsesaftaler, erhvervslejekontrakter mv.</p>
+            </a>
+            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="/warrant-programs">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
+                <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                    <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                </mask>
+                <g mask="url(#mask0_233_777)">
+                    <rect width="24" height="24" fill="#D9D9D9"></rect>
+                    <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                </g>
+              </svg>
+              <p class="text-xl">Warrantprogrammer</p>
+              <p class="text-sm pr-5 lg:pr-28">Warrants, medarbejderaktier og andre bonusprogrammer. Rådgivning om etablering, administration, eksekvering og skat.</p>
+            </a>
+            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="/shutdown">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
+                <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                    <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                </mask>
+                <g mask="url(#mask0_233_777)">
+                    <rect width="24" height="24" fill="#D9D9D9"></rect>
+                    <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                </g>
+              </svg>
+              <p class="text-xl">Nedlukning</p>
+              <p class="text-sm pr-5 lg:pr-28">Kontrollerede nedlukning af selskaber ved frivillig likvidation eller betalingserklæring.</p>
+            </a>
+            <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full gap-y-2.5 border-solid border-r-[1px] lg:border-none" href="/other-services">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
+                <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                    <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                </mask>
+                <g mask="url(#mask0_233_777)">
+                    <rect width="24" height="24" fill="#D9D9D9"></rect>
+                    <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                </g>
+              </svg>  
+              <p class="text-xl">Andre ydelser</p>
+              <p class="text-sm pr-5 lg:pr-28">Stiftelse af selskaber, omdannelse til ApS, selskabsændringer, ansættelseskontrakter, gældsrådgivning, konkursrådgivning.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Payment info -->
+    <section class="py-10 lg:pt-20 lg:pb-24 bg-slate-200">
+      <div class="container">
+        <div class="flex flex-col gap-y-8 items-start lg:flex-row lg:gap-x-10">
+          <div class="flex flex-col w-[350px] gap-y-5 lg:w-[560px]">
+            <h3 class="text-lg leading-7 lg:leading-9 font-medium">Advokatansvarsforsikring</h3>
+            <div class="flex flex-col gap-y-2 lg:gap-y-5">
+              <p class="leading-8 text-black">Albrechtsen Law har tegnet ansvarsforsikring og stillet garanti i overensstemmelse med Advokatsamfundets regler.</p>
+              <p class="leading-8 text-black">Ansvarsforsikringen og garantien er tegnet hos HDI Global Specialty SE, Langebrogade 3F, 1411 København K, Danmark, policenummer <span class="text-nowrap ">156-76843577-30012.</span></p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-5">
+            <h3 class="text-lg leading-7 lg:leading-9 font-medium">Klientkontooplysninger</h3>
+            <div class="flex flex-col lg:gap-y-1 leading-8 text-black">
+              <p>Reg.nr. 9070 </p>
+              <p>Kontonr. 1639742349</p>
+              <p>IBAN: DK7790701639742349</p>
+              <p>SWIFT: VRAADK21</p>
+              <p>Bank: Sparekassen Danmark</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-10 lg:py-20">
+      <div class="container">
+        <div class="flex flex-col text-slate-50 gap-y-14 justify-between lg:flex-row">
+          <div class="flex flex-col justify-between">
+            <a class="max-w-56" href="/">
+              <img class="w-full" src="./images/logo_light.png" alt="logo" />
+            </a>
+            <span class="hidden lg:block">CVR-nr. 44581078</span>
+          </div>
+          <div class="flex flex-col gap-y-10">
+            <div class="flex flex-col gap-y-5 lg:gap-x-16 font-medium text-lg lg:flex-row">
+              <a href="/">Forretningsbetingelser</a>
+              <a href="/">Persondatapolitik</a>
+              <a href="/">Kontakt </a>
+            </div>
+            <div class="flex flex-col gap-y-5">
+              <span class="uppercase text-3xl leading-[45px] lg:text-2xl lg:leading-9">København</span>
+              <div class="flex flex-col gap-y-7 text-xl leading-[30px] lg:gap-x-20 lg:text-lg lg:flex-row">
+                  <span class="pr-16">Vierdiget 32<br>
+                  2791 Dragør Danmark</span>
+                  <div class="flex flex-col">
+                    <div>P:  
+                      <a href="tel:+4561483456" target="_blank">+45 61 48 34 56</a>
+                    </div>
+                    <div>E:  
+                      <a href="mailto:ral@albrechtsenlaw.dk" title="email: ral@albrechtsenlaw.dk" target="_blank">ral@albrechtsenlaw.dk</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <a class="arrow_dawn pl-[28px]" 
+            target="_blank" href="https://maps.app.goo.gl/YYweknrsNRTYFJhG6" >Google Maps</a>
+          </div>
+          <span class="lg:hidden">CVR-nr. 44581078</span>
+        </div>
+      </div>
+    </footer>
+    <!-- Modal menu -->
+    <div id="modal" class="hidden fixed top-0 left-0 h-lvh w-full z-20">
+      <div id="overlay" class="bg-zinc-300/40 h-full backdrop-blur-sm"></div>
+      <nav
+        class="absolute bg-slate-50 flex flex-col z-30 w-full lg:w-[600px] right-0 top-0 h-full px-5 lg:pl-[100px] pt-5 lg:pt-8 lg:pr-36 gap-y-10 lg:gap-y-24 animate-open-menu"
+      >
+        <button id="close" class="flex flex-wrap lg:gap-x-1 items-center cursor-pointer w-fit self-end">
+          <svg class="w-8 h-8 lg:w-6 lg:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+            <path d="M8.53352 24.8717L7.12842 23.4666L14.5951 15.9999L7.12842 8.53327L8.53352 7.12817L16.0002 14.5948L23.4669 7.12817L24.872 8.53327L17.4053 15.9999L24.872 23.4666L23.4669 24.8717L16.0002 17.405L8.53352 24.8717Z" fill="#222932"/>
+          </svg>
+          <span class="uppercase hidden lg:inline">close</span>
+        </button>
+        <div id="menu-list" class="flex flex-col gap-y-10 items-start text-2xl">
+          <div class="flex flex-col gap-y-5 items-start w-full max-w-[260px]">
+            <a class="menu-item" href="/specialties">Specialer</a>
+            <nav class="flex flex-col gap-y-[18px] text-base w-full">
+              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="/company-structure">
+                Selskabsstruktur
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                      <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                  </mask>
+                  <g mask="url(#mask0_233_777)">
+                      <rect width="24" height="24" fill="#D9D9D9"></rect>
+                      <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                  </g>
+                </svg>
+              </a>
+              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="/capital-increases">
+                Kapitalforhøjelser
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                      <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                  </mask>
+                  <g mask="url(#mask0_233_777)">
+                      <rect width="24" height="24" fill="#D9D9D9"></rect>
+                      <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                  </g>
+                </svg>
+              </a>
+              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="/contracts">
+                Kontrakter
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                      <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                  </mask>
+                  <g mask="url(#mask0_233_777)">
+                      <rect width="24" height="24" fill="#D9D9D9"></rect>
+                      <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                  </g>
+                </svg>
+              </a>
+              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="/warrant-programs">
+                Warrantprogrammer
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                      <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                  </mask>
+                  <g mask="url(#mask0_233_777)">
+                      <rect width="24" height="24" fill="#D9D9D9"></rect>
+                      <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                  </g>
+                </svg>
+              </a>
+              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="/shutdown">
+                Nedlukning
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                      <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                  </mask>
+                  <g mask="url(#mask0_233_777)">
+                      <rect width="24" height="24" fill="#D9D9D9"></rect>
+                      <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                  </g>
+                </svg>
+              </a>
+              <a class="menu-item flex justify-between cursor-pointer max-w-[360px] w-full" href="/other-services">
+                Andre Ydelser
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                      <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                  </mask>
+                  <g mask="url(#mask0_233_777)">
+                      <rect width="24" height="24" fill="#D9D9D9"></rect>
+                      <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                  </g>
+                </svg>
+              </a>
+            </nav>
+          </div>
+          <a class="menu-item" href="#about_me">Om</a>
+          <a class="menu-item" href="#book_meeting">Kontakt</a>
+          <a href="#book_meeting" class="mt-5 lg:hidden primary_btn w-fit flex gap-x-1 items-center text-[16px] leading-6 py-3.5 px-9 uppercase text-white">
+            <span class="booking_light_icon block h-6 w-6"></span>
+            Book et møde
+          </a>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
