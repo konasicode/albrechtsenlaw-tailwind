@@ -118,6 +118,10 @@ html {
 	font-size: 40px;
 	line-height: 52px;
 }
+.servise {
+	font-size: 16px !important;
+	line-height: 20px  !important;;
+}
 
 @media (min-width: 1024px) {
 	.calendly-inline-widget {
