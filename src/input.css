@@ -118,9 +118,9 @@ html {
 	font-size: 40px;
 	line-height: 52px;
 }
-.servise {
-	font-size: 16px !important;
-	line-height: 20px  !important;;
+span.service {
+	font-size: 16px;
+	line-height: 20px;
 }
 
 @media (min-width: 1024px) {
