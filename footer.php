@@ -1,4 +1,95 @@
-	<!-- Payment info -->
+  <?php if( !is_home() && !is_front_page()   ) : ?>
+      <!-- Our Services -->
+      <section class="bg-slate-50 lg:pt-14 pb-8 lg:pb-16">
+          <div class="container">
+            <div class="flex flex-col gap-y-7 lg:gap-y-10">
+            <h3 class="text-3xl lg:text-4xl lg:leading-[48px]">Vores Specialer</h3>
+              <div class="flex flex-wrap lg:gap-x-10 gap-y-4 lg:gap-y-8">
+                <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="<?php echo get_home_url(); ?>/company-structure">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
+                    <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                        <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                    </mask>
+                    <g mask="url(#mask0_233_777)">
+                        <rect width="24" height="24" fill="#D9D9D9"></rect>
+                        <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                    </g>
+                  </svg>
+                  <p class="text-xl">Selskabsstruktur</p>
+                  <p class="text-sm leading-6 pr-5 lg:pr-28">Valg af selskabsform i forhold til bl.a. optimering af cash flow og skat samt fordeling af aktiviteter og risiko.</p>
+                </a>
+                <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="<?php echo get_home_url(); ?>/capital-increases">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
+                    <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                        <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                    </mask>
+                    <g mask="url(#mask0_233_777)">
+                        <rect width="24" height="24" fill="#D9D9D9"></rect>
+                        <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                    </g>
+                  </svg>
+                  <p class="text-xl">Kapitalforhøjelser</p>
+                  <p class="text-sm pr-5 lg:pr-28">Investeringsrunder og kapitalforhøjelser med kontant indskud, gældskonvertering eller apportindskud.</p>
+                </a>
+                <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full gap-y-2.5 border-solid border-r-[1px] lg:border-none" href="<?php echo get_home_url(); ?>/contracts">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
+                    <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                        <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                    </mask>
+                    <g mask="url(#mask0_233_777)">
+                        <rect width="24" height="24" fill="#D9D9D9"></rect>
+                        <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                    </g>
+                  </svg>  
+                  <p class="text-xl">Kontrakter</p>
+                  <p class="text-sm pr-5 lg:pr-28">Ejeraftaler, handelsbetingelser, samarbejdsaftaler, låneaftaler, overdragelsesaftaler, erhvervslejekontrakter mv.</p>
+                </a>
+                <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="<?php echo get_home_url(); ?>/warrant-programs">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
+                    <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                        <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                    </mask>
+                    <g mask="url(#mask0_233_777)">
+                        <rect width="24" height="24" fill="#D9D9D9"></rect>
+                        <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                    </g>
+                  </svg>
+                  <p class="text-xl">Warrantprogrammer</p>
+                  <p class="text-sm pr-5 lg:pr-28">Warrants, medarbejderaktier og andre bonusprogrammer. Rådgivning om etablering, administration, eksekvering og skat.</p>
+                </a>
+                <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full border-r-zinc-200 border-solid border-r-[1px] gap-y-2.5" href="<?php echo get_home_url(); ?>/shutdown">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
+                    <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                        <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                    </mask>
+                    <g mask="url(#mask0_233_777)">
+                        <rect width="24" height="24" fill="#D9D9D9"></rect>
+                        <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                    </g>
+                  </svg>
+                  <p class="text-xl">Nedlukning</p>
+                  <p class="text-sm pr-5 lg:pr-28">Kontrollerede nedlukning af selskaber ved frivillig likvidation eller betalingserklæring.</p>
+                </a>
+                <a class="menu-item flex flex-col cursor-pointer max-w-[360px] w-full gap-y-2.5 border-solid border-r-[1px] lg:border-none" href="<?php echo get_home_url(); ?>/other-services">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="right-arrowup">
+                    <mask id="mask0_233_777" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="15" height="15">
+                        <path d="M18.5 18.5L17 18.5L17 7.05385L5.55383 18.5L4.5 17.4462L15.9462 6.00002L4.5 6.00002L4.5 4.50005L18.5 4.50005L18.5 18.5Z" fill="#CCD9E1"></path>
+                    </mask>
+                    <g mask="url(#mask0_233_777)">
+                        <rect width="24" height="24" fill="#D9D9D9"></rect>
+                        <rect class="active-arrow" width="24" height="24" fill="#153396"></rect>
+                    </g>
+                  </svg>  
+                  <p class="text-xl">Andre ydelser</p>
+                  <p class="text-sm pr-5 lg:pr-28">Stiftelse af selskaber, omdannelse til ApS, selskabsændringer, ansættelseskontrakter, gældsrådgivning, konkursrådgivning.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  <?php endif; ?>
+  <!-- Payment info -->
 	<section class="py-10 lg:pt-20 lg:pb-24 bg-slate-200">
       <div class="container">
         <div class="flex flex-col gap-y-8 items-start lg:flex-row lg:gap-x-10">
