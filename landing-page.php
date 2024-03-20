@@ -3,26 +3,26 @@
 <?php
 	get_header();
 ?>
-	<!-- Hero Section -->
-  <?php
-    $hero = get_field('hero_section');
-    if( $hero ): ?>
-	  <section class="bg-[url('../images/bg_leading_mob.png')] lg:bg-[url('../images/bg_leading.png')] bg-left-bottom lg:bg-[bottom_left_510px] bg-no-repeat lg:pb-[86px] pb-[220px] mt-[-88px]">
-      <div class="container">
-        <div class="flex flex-col gap-y-14 lg:gap-y-20">
-          <div class="flex flex-col gap-y-7 lg:gap-y-10 max-w-[600px]">
-            <h1 class="font-bold text-3xl lg:text-5xl tracking-[-0.075rem] leading-[60px] lg:leading-[65px] lg:tracking-[-0.094rem] pt-32 lg:pt-36">
-            <?php echo esc_html( $hero['title'] ); ?>
-            </h1>
-            <p class="text-base lg:text-2xl lg:leading-8 lg:pt-16"><?php echo esc_html( $hero['description'] ); ?></p>
-            <a href="#book_meeting" class="primary_btn w-fit flex gap-x-1 items-center  mt-3 lg:mt-0 leading-4 py-3.5 px-9 uppercase text-white">
-              <span class="booking_light_icon block h-6 w-6"></span>
-              Book et møde
-            </a>
+    <!-- Hero Section -->
+    <?php
+      $hero = get_field('hero_section');
+      if( $hero ): ?>
+      <section class="bg-[url('../images/bg_leading_mob.png')] lg:bg-[url('../images/bg_leading.png')] bg-left-bottom lg:bg-[bottom_left_510px] bg-no-repeat lg:pb-[86px] pb-[220px] mt-[-88px]">
+        <div class="container">
+          <div class="flex flex-col gap-y-14 lg:gap-y-20">
+            <div class="flex flex-col gap-y-7 lg:gap-y-10 max-w-[600px]">
+              <h1 class="font-bold text-3xl lg:text-5xl tracking-[-0.075rem] leading-[60px] lg:leading-[65px] lg:tracking-[-0.094rem] pt-32 lg:pt-36">
+              <?php echo esc_html( $hero['title'] ); ?>
+              </h1>
+              <p class="text-base lg:text-2xl lg:leading-8 lg:pt-16"><?php echo esc_html( $hero['description'] ); ?></p>
+              <a href="#book_meeting" class="primary_btn w-fit flex gap-x-1 items-center  mt-3 lg:mt-0 leading-4 py-3.5 px-9 uppercase text-white">
+                <span class="booking_light_icon block h-6 w-6"></span>
+                Book et møde
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     <?php endif;
     ?>
     <!-- Operating environment Section-->
@@ -33,7 +33,7 @@
         <div class="container">
           <div class="flex flex-col  gap-y-10 lg:flex-row lg:gap-x-36">
               <div class="flex flex-col gap-y-5 lg:gap-y-10  lg:pt-7">
-                <h1 class="text-xl"><?php echo esc_html( $op_env['title'] ); ?></h1>
+                <div class="text-xl"><?php echo esc_html( $op_env['title'] ); ?></div>
                 <div class="flex flex-col gap-y-[10px] lg:gap-y-5 text-base">
                   <?php echo $op_env['content']; ?>
                 </div>
