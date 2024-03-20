@@ -9,7 +9,7 @@
         <div class="flex flex-col gap-y-14 lg:gap-y-20">
           <div class="flex flex-col gap-y-7 lg:gap-y-10 max-w-[600px]">
             <h1 class="font-bold text-3xl lg:text-5xl tracking-[-0.075rem] leading-[60px] lg:leading-[65px] lg:tracking-[-0.094rem] pt-32 lg:pt-36">
-               Kapitalforhøjelser
+            Kapitalforhøjelser
             </h1>
             <p class="text-base lg:text-2xl lg:leading-8 lg:pt-16">Advokat, Rasmus Albrechtsen, har assisteret startups og investorer med gennemførelse af kapitalforhøjelser for et samlede trecifret millionbeløb.</p>
             <a href="#book_meeting" class="primary_btn w-fit flex gap-x-1 items-center  mt-3 lg:mt-0 leading-4 py-3.5 px-9 uppercase text-white">
@@ -43,18 +43,7 @@
         </div>
       </div>
     </section>
-    <!-- Priser -->
-    <section class="bg-slate-200 py-14">
-      <div class="container">
-         <div class="flex flex-col gap-y-8 text-center items-center">
-            <h1 class="text-4xl leading-[48px]">Priser</h1>
-            <div class="flex flex-col gap-y-6 text-lg text-balance w-full lg:max-w-[840px]">
-               <p>Prisen for hver opgave aftales individuelt afhængigt af bl.a. opgavens kompleksitet og omfang.  Albrechtsen Law har stor erfaring med kapitalforhøjelser og investeringsrunder, hvorfor Albrechtsen Law typisk kan tilbyde fastpris, inden opgavens start.</p>
-               <p class="text-lg">Albrechtsen Law samarbejder med statsautoriserede revisorer, der bl.a. kan bistå med vurderingsberetninger og revisorerklæringer.</p>
-            </div>
-         </div>
-      </div>
-    </section>
+    <?php the_content(); ?>
     <!-- Form -->
     <section id="book_meeting" class="pt-14 pb-24">
       <div class="container">
