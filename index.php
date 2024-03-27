@@ -2,7 +2,7 @@
 	get_header();
 ?>
     <!-- Hero Section -->
-    <section class="bg-[url('../images/hero_bg_mob.png')] lg:bg-[url('../images/hero_bg.png')] bg-cover bg-no-repeat pb-10 lg:pb-9 mt-[-88px]">
+    <section class="bg-[url('../images/hero_bg_mob.png.webp')] lg:bg-[url('../images/hero_bg.png.webp')] bg-cover bg-no-repeat pb-10 lg:pb-9 mt-[-88px]">
       <div class="container">
         <div class="flex flex-col gap-y-14 lg:gap-y-20">
           <div class="flex flex-col gap-y-10 max-w-[660px]">
@@ -102,8 +102,8 @@
     <section id="about_me" class="py-10 lg:pt-20 lg:pb-24">
       <div class="container">
         <div class="flex flex-col gap-y-7 lg:flex-row lg:gap-x-24">
-          <img class="hidden w-full max-w-[500px] lg:block" src="<?php echo get_template_directory_uri(); ?>/build/images/rasmus_foto.png" alt="rasmus_photo">
-          <img class="lg:hidden w-full max-w-[350px]" src="<?php echo get_template_directory_uri(); ?>/build/images/rasmus_foto_mob.png" alt="rasmus_photo">
+          <img class="hidden w-full max-w-[500px] lg:block" src="<?php echo get_template_directory_uri(); ?>/build/images/rasmus_photo.jpg" alt="rasmus_photo">
+          <img class="lg:hidden w-full max-w-[350px]" src="<?php echo get_template_directory_uri(); ?>/build/images/rasmus_photo_mob.jpg" alt="rasmus_photo_mob">
           <div class="flex flex-col gap-y-5 lg:gap-y-8">
             <div class="flex flex-col gap-y-5 lg:gap-y-3">
               <h1 class="text-4xl leading-[50px] lg:text-5xl lg:leading-[72px]">Rasmus Albrechtsen</h1>
@@ -136,7 +136,7 @@
         <div class="calendly-container pt-10 lg:pt-0">
           <div class="calendly-inline-widget" data-url="https://calendly.com/rasmusa/meet-with-rasmus?hide_event_type_details=1&hide_gdpr_banner=1"></div>
         </div>
-        <div class="pt-10">
+        <div class="lg:pt-10">
           <h3 class="text-[52px] text-black text-center">Kontakt os</h3>
           <?php echo do_shortcode( '[wpforms id="50" title="false"]' ); ?>
         </div>

@@ -1,6 +1,6 @@
   <?php if( !is_home() && !is_front_page()   ) : ?>
       <!-- Our Services -->
-      <section class="bg-slate-50 lg:pt-14 pb-8 lg:pb-16">
+      <section class="bg-slate-50 pt-10 lg:pt-14 pb-8 lg:pb-16">
           <div class="container">
             <div class="flex flex-col gap-y-7 lg:gap-y-10">
             <h3 class="text-3xl lg:text-4xl lg:leading-[48px]">Vores Specialer</h3>
@@ -90,17 +90,17 @@
       </section>
   <?php endif; ?>
   <!-- Payment info -->
-	<section class="py-10 lg:pt-20 lg:pb-24 bg-slate-200">
+	  <section class="py-10 lg:pt-20 lg:pb-24 bg-slate-200">
       <div class="container">
-        <div class="flex flex-col gap-y-8 items-start lg:flex-row lg:gap-x-10">
-          <div class="flex flex-col w-[350px] gap-y-5 lg:w-[560px]">
+        <div class="flex flex-col gap-y-8 lg:flex-row lg:justify-between">
+          <div class="flex flex-col w-full gap-y-5 lg:max-w-[560px]">
             <h3 class="text-lg leading-7 lg:leading-9 font-medium">Advokatansvarsforsikring</h3>
             <div class="flex flex-col gap-y-2 lg:gap-y-5">
               <p class="leading-8 text-black">Albrechtsen Law har tegnet ansvarsforsikring og stillet garanti i overensstemmelse med Advokatsamfundets regler.</p>
-              <p class="leading-8 text-black">Ansvarsforsikringen og garantien er tegnet hos HDI Global Specialty SE, Langebrogade 3F, 1411 København K, Danmark, policenummer 156-76843577-30012.</p>
+              <p class="leading-8 text-black">Ansvarsforsikringen og garantien er tegnet hos HDI Global Specialty SE, Langebrogade 3F, 1411 København K, Danmark, policenummer <span class="text-nowrap">156-76843577-30012.</span></p>
             </div>
           </div>
-          <div class="flex flex-col gap-y-5">
+          <div class="flex flex-col w-full gap-y-5 lg:max-w-[560px]">
             <h3 class="text-lg leading-7 lg:leading-9 font-medium">Klientkontooplysninger</h3>
             <div class="flex flex-col lg:gap-y-1 leading-8 text-black">
               <p>Reg.nr. 9070 </p>

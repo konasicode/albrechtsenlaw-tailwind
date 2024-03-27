@@ -7,19 +7,17 @@
     <?php
       $hero = get_field('hero_section');
       if( $hero ): ?>
-      <section class="bg-[url('../images/bg_leading_mob.png')] lg:bg-[url('../images/bg_leading.png')] bg-left-bottom lg:bg-[bottom_left_510px] bg-no-repeat lg:pb-[86px] pb-[220px] mt-[-88px]">
+      <section class="bg-[url('../images/bg_leading_mob.png')] lg:bg-[url('../images/bg_leading.png')] bg-left-bottom lg:bg-[bottom_left_510px] bg-no-repeat pt-[130px] pb-[100px] lg:pb-[76px] mt-[-88px]">
         <div class="container">
-          <div class="flex flex-col gap-y-14 lg:gap-y-20">
-            <div class="flex flex-col gap-y-7 lg:gap-y-10 max-w-[600px]">
-              <h1 class="font-bold text-3xl lg:text-5xl tracking-[-0.075rem] leading-[60px] lg:leading-[65px] lg:tracking-[-0.094rem] pt-32 lg:pt-36">
-              <?php echo esc_html( $hero['title'] ); ?>
-              </h1>
-              <p class="text-base lg:text-2xl lg:leading-8 lg:pt-16"><?php echo esc_html( $hero['description'] ); ?></p>
-              <a href="#book_meeting" class="primary_btn w-fit flex gap-x-1 items-center  mt-3 lg:mt-0 leading-4 py-3.5 px-9 uppercase text-white">
-                <span class="booking_light_icon block h-6 w-6"></span>
-                Book et møde
-              </a>
-            </div>
+          <div class="flex flex-col gap-y-16 max-w-[600px] min-h-[367px] lg:min-h-[394px]">
+            <h1 class="font-bold text-3xl lg:text-5xl tracking-[-0.075rem] leading-10 lg:leading-[65px] lg:tracking-[-0.094rem]">
+            <?php echo esc_html( $hero['title'] ); ?>
+            </h1>
+            <p class="text-base lg:text-2xl lg:leading-8"><?php echo esc_html( $hero['description'] ); ?></p>
+            <a href="#book_meeting" class="primary_btn w-fit flex gap-x-1 items-center leading-4 py-3.5 px-9 uppercase text-white">
+              <span class="booking_light_icon block h-6 w-6"></span>
+              Book et møde
+            </a>
           </div>
         </div>
       </section>
@@ -38,15 +36,15 @@
                   <?php echo $op_env['content']; ?>
                 </div>
               </div>
-              <img class="hidden w-full max-w-[460px] lg:block" src="<?php echo get_template_directory_uri(); ?>/build/images/environment_photo.png" alt="environment_photo">
-              <img class="lg:hidden w-full max-w-[350px]" src="<?php echo get_template_directory_uri(); ?>/build/images/environment_photo_mob.png" alt="environment_photo_mob">
+              <img class="hidden w-full max-w-[460px] lg:block" src="<?php echo get_template_directory_uri() . $op_env['desktop_img']; ?>" alt="environment_photo">
+              <img class="lg:hidden w-full max-w-[350px]" src="<?php echo get_template_directory_uri() . $op_env['mob_img']; ?>" alt="environment_photo_mob">
           </div>
         </div>
       </section>
     <?php endif; ?>
     <?php the_content(); ?>
     <!-- Form -->
-    <section id="book_meeting" class="pt-14 pb-24">
+    <section id="book_meeting" class="pt-10 pb-14 lg:pt-14 lg:pb-24">
       <div class="container">
          <div>
             <h3 class="text-2xl lg:text-4xl lg:leading-[44px] font-bold text-black w-full max-w-[300px] lg:max-w-[840px] m-auto text-center">Udfyld formularen og bliv kontaktet af advokat,
